@@ -1,0 +1,16 @@
+{
+  "/users/*": {
+    "target": "http://localhost:4200/assets/users.json",
+    "secure": false,
+    "pathRewrite": {
+      "^/users": ""
+    }
+  },
+  "/users-extra/*": {
+    "target": "http://localhost:4200/assets/users-extra.json",
+    "secure": false,
+    "pathRewrite": {
+      "^/users-extra": ""
+    }
+  }
+}
